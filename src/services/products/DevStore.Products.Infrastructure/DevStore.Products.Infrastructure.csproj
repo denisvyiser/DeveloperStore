@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\building-blocks\DevStore.Core\DevStore.Core.csproj" />
+    <ProjectReference Include="..\..\..\building-blocks\DevStore.Db.Postgre\DevStore.Db.Postgre.csproj" />
+    <ProjectReference Include="..\DevStore.Products.Domain\DevStore.Products.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

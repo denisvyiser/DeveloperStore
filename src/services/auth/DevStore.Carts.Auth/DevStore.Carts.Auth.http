@@ -1,0 +1,6 @@
+@DevStore.Carts.Auth_HostAddress = http://localhost:5177
+
+GET {{DevStore.Carts.Auth_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

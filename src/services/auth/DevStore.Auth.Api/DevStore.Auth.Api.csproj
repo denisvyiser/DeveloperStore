@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Scrutor" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\building-blocks\DevStore.Api.Core\DevStore.Api.Core.csproj" />
+    <ProjectReference Include="..\..\..\building-blocks\DevStore.Core\DevStore.Core.csproj" />
+    <ProjectReference Include="..\DevStore.Auth.Application\DevStore.Auth.Application.csproj" />
+  </ItemGroup>
+
+</Project>

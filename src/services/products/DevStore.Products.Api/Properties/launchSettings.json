@@ -1,0 +1,46 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:62567",
+      "sslPort": 44333
+    }
+  },
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5114",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTIONSTRINGS__DEVSTORE": "Server=localhost;Port=15432;Pooling=true;Database=postgres;User Id=postgres;Password=postgres@2025;"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7033;http://localhost:5114",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTIONSTRINGS__DEVSTORE": "Server=localhost;Port=15432;Pooling=true;Database=postgres;User Id=postgres;Password=postgres@2025;",
+        "CERTIFICATEKEY": "-----BEGIN RSA PRIVATE KEY-----MIIEowIBAAKCAQBvDFMoJYhCOWMw3VlmmiDR6ImbJ8RE0rjuQ+etKyNAlHqStJOkmNlwqnfA3VRZFPaODr4uFJDAU9XWgnyuDErqf+j0q1HEbA+h8FT7KDbLpKEkzN/3cC0mind4T6BY9paglBJSCFMyDKx3BdQOSryzv4r/PE1mu2u+3F7G5Mmjeycc2VGtRZC7jH5mLXhMqVeaLLvmGl+Z7oHvht2v1UuYlVzAQoRbMB0cm2daLk+0m8sTACuZQ3kHvdVs7H0TrilLBdotr6HTYepLsZryzhxKbkJBXu6d2eYMsVR7wtakmabLF2+SP/Yo6tuGN51CXjoqSVGGU9nF9BwnzuopneBPAgMBAAECggEARjSbiiEYYQ3Y+Pan46cDotGJ1a6xdfVm9zO1D5TbJ6P3TjKduQztQz5ykVscTWlkavFFKOrVjNIzufcrDfo1jsWpKK369tx+kZnYkCSfZ+W//v0Lh2rDEL+vwj9NF5FmL0UNxBEBT/4VNvZXV2XGoTkyjiS4pn9NIhA+Vy4jkJefB//lRbyA5GvGAlnRRqmWYd9k5CzbBdLFQNKsdEr4XmYDSK3SYpos+IdxrTjXrgmKzWBBKOyby3FdmQceirOF2h7NEl8eB8JrDTxcBT2VVRsZMq+eCI0yUPKioTawfIX0eg7GUIWMJlb36HGkwko5R2MHyg1lQNms1BosV+cj6QKBgQDCdlfQKK3jZXbsGdLHUJY6V+gvLvxMX4g+aXEz0/WUEVw5olzB33r3sS4lNcQ6r6wn+Wz8fstXv5w0E+7ReUP3p1be8Ry1PKfDAzYbryOiBuhfEGfmtQ1av4ZDKtJwKDUEN7tCayqtLuHv4hhE2WQWePNGqgHUgDLTs1oO7qj1tQKBgQCSMHzp2+xD3f+C036o2cDLvbf0uSIe83Ud5GI1hwhAPa0mQ3zdRwTPZWf+Ld1QhTprFbNYw9JA513Vs/xR4lV6ymateiyESaoNlQPKVl8Dorb8wPDlsOMQ7rDYHXs2NGJnkcbayhhmsMYb9KINrgFNmts0HwL4FF0C/vNt74mAcwKBgQDBw9XgDoil6vZCb8C85amrXOh4C2NOXmqNdddcgzlSXrH8o7G1ZI9Mu3l1jkuHBoCOHFTiixzmxIBKzAnNI/37iPxgjPPECzpGcK67ixoAWs2z288L7R/vaqPHzaV+KDIbj8TBe7M8eVicBDeWct7uHXqa0M+eBFeg5jc4ZcppeQKBgAc8dzJsPGmvl3I2XdKl1LFBFtX6RAIcMvPj1iioInRrmSKHvKqHVWmer2MZihbuQVIDpPkD2Gh2C2MEoby741dMpYB4x7NUoiJB+goN9G4No9knA8Wa1+KCriZEb1Djjutpf9pcnpCWt3eyyEK9FjttKuSNlGwLNf9r90i9zqSZAoGBAJqlyFIK66K3O58sgzx9LC6+ot/LP3n00KwntDPU8pFIIzhEbZrB9caHX68OSa8deektK8X/tG/mwSt93e594+vBwqexVz9ic/xmzzWRMTy4wHVSJZgsC6+CMTfULcpF565kHmvcY5w74pVj2aQQvIWtotM4C50EBCSzG4So2ywC-----END RSA PRIVATE KEY-----",
+        "TokenConfig__Issuer": "*.devstore.com.br",
+        "TokenConfig__ExpirationTime": "3600"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
