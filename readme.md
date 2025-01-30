@@ -85,3 +85,10 @@ This section describes the overall structure and organization of the project fil
  
 See [Project Structure](/.doc/project-structure.md)
 tem menu de contexto
+
+
+## Project Implementation
+
+This section describes the implementation of the projetct.
+
+See [Project Structure](/.doc/project-implementation.md)
