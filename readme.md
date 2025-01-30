@@ -91,4 +91,4 @@ tem menu de contexto
 
 This section describes the implementation of the projetct.
 
-See [Project Structure](/.doc/project-implementation.md)
+See [Project Implementation](/.doc/project-implementation.md)
