@@ -22,7 +22,7 @@ namespace DevStore.Users.Application.Commands
 
         public override bool IsValid()
         {
-            ValidationResult = new UserValidation<UserCommand>().Validate(this);
+            ValidationResult = new UserCommandValidation<UserCommand>().Validate(this);
 
             return ValidationResult.IsValid;
         }

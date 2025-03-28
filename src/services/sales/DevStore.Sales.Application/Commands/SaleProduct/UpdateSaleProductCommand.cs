@@ -21,7 +21,7 @@ namespace DevStore.Sales.Application.Commands
 
         public override bool IsValid()
         {
-            ValidationResult = new SaleProductValidation<SaleProductCommand>().Validate(this);
+            ValidationResult = new SaleProductCommandValidation<SaleProductCommand>().Validate(this);
 
             return ValidationResult.IsValid;
         }

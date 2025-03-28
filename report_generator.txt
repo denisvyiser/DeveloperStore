@@ -1,0 +1,3 @@
+dotnet test dev_store.sln /p:CollectCoverage=true /p:CoverletOutput=./Coverage/ /p:CoverletOutputFormat=cobertura
+
+reportgenerator -reports:".\tests\DevStore.Test\Coverage\coverage.cobertura.xml" -targetdir:"coveragereport"-reporttypes:Html

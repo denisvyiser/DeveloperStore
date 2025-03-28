@@ -7,3 +7,4 @@ $env:CONNECTIONSTRINGS__DEVSTORE='Server=localhost;Port=5432;Pooling=true;Databa
 Add-Migration userInicial -Project DevStore.Users.Infrastructure -Context UsersDbContext -verbose
 Add-Migration productInicial -Project DevStore.Products.Infrastructure -Context ProductsDbContext -verbose
 Add-Migration cartInicial -Project DevStore.Carts.Infrastructure -Context CartsDbContext -verbose
+Add-Migration saleInicial -Project DevStore.Sales.Infrastructure -Context SalesDbContext -verbose

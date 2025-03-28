@@ -14,7 +14,7 @@ namespace DevStore.Carts.Application.Commands
 
         public override bool IsValid()
         {
-            ValidationResult = new CartValidation<CartCommand>().Validate(this);
+            ValidationResult = new CartValidationCommand<CartCommand>().Validate(this);
 
             return ValidationResult.IsValid;
         }

@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace DevStore.Infrastructure.Repositories
 {
-    public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : Entity
+    public abstract class BaseRepository<TEntity> : IDisposable, IBaseRepository<TEntity> where TEntity : Entity
     {
         public DbContext context;
 
@@ -20,10 +20,9 @@ namespace DevStore.Infrastructure.Repositories
             return context.Set<TEntity>();
         }
 
-        public async Task<PaginatedList<TEntity>> ListPagedAsync(List<Order> order, Page page, List<Filter> filter, params Expression<Func<TEntity, object>>[] properties)
+        public async Task<PaginatedList<TEntity>> ListPagedAsync(List<Order> order, Page page, List<Filter> filter)
         {
             var result = await DbSet()
-                .IncludeProperties(properties)
                 .Where(filter)
                 .OrderMultiple(order)
                 .Skip((page.Index - 1) * page.Quantity)
@@ -53,31 +52,13 @@ namespace DevStore.Infrastructure.Repositories
         }
         public async Task UpdateAsync(TEntity entity)
         {
-            // var context = await GetFirstByExpressionAsync(c=> c.id == entity.id && c.version == version);
-
-            //Context.Entry(context).CurrentValues.SetValues(entity);
-
-
-
-            //Context.Entry(entity).State = EntityState.Modified;
             DbSet().Update(entity);
 
             await SaveChangesAsync();
-
-            //Context.Entry(entity).State = EntityState.Detached;
-
-            //     DbSet().Update(entity);
         }
-
-        public async Task InsertRangeAsync(IList<TEntity> entities)
-        {
-            await DbSet().AddRangeAsync(entities);
-        }
-
+                
         public async Task DeleteAsync(TEntity entity)
         {
-
-            //context.Entry(entity).State = EntityState.Deleted;
 
             DbSet().Remove(entity);
 
@@ -113,6 +94,5 @@ namespace DevStore.Infrastructure.Repositories
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-
     }
 }

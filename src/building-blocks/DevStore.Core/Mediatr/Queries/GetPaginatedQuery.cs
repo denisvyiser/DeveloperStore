@@ -10,8 +10,6 @@ namespace DevStore.Core.Mediatr.Queries
         public Page Page { get; set; }
         public List<Order> Orders { get; set; } = new List<Order>();
 
-        public Expression<Func<TEntity, object>>[] Properties;
-        //public Restriction Restriction { get; set; }
         public override bool IsValid()
         {
             return true;
