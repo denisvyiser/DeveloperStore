@@ -34,7 +34,7 @@ namespace DevStore.Core.Mediatr.Handlers.Queries
             //}
 
 
-            var resultado = await _repository.ListPagedAsync(request.Orders, request.Page, request.Filters, request.Properties);
+            var resultado = await _repository.ListPagedAsync(request.Orders, request.Page, request.Filters);
 
             return resultado;
         }

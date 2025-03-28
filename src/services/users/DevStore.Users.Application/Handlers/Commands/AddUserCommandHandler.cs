@@ -15,7 +15,5 @@ namespace DevStore.Users.Application.Handlers.Commands
 
         }
 
-        //public override Expression<Func<DemoModel, bool>> generateQuery(DemoModel entity) => c => c.Description == entity.Description;
-
     }
 }

@@ -19,7 +19,7 @@ namespace DevStore.Products.Application.Commands
 
         public override bool IsValid()
         {
-            ValidationResult = new ProductValidation<ProductCommand>().Validate(this);
+            ValidationResult = new ProductValidationCommand<ProductCommand>().Validate(this);
 
             return ValidationResult.IsValid;
         }
